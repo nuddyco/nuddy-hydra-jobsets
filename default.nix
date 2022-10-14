@@ -17,8 +17,8 @@
             "emailoverride": "",
             "keepnr": 3,
             "inputs": {
-                "src": { "type": "git", "value": "git://github.com/nuddyco/nuddy-hydra-jobsets.git", "emailresponsible": false },
-                "nixpkgs": { "type": "git", "value": "git://github.com/NixOS/nixpkgs.git release-20.05", "emailresponsible": false }
+                "src": { "type": "git", "value": "https://github.com/nuddyco/nuddy-hydra-jobsets", "emailresponsible": false },
+                "nixpkgs": { "type": "git", "value": "https://github.com/NixOS/nixpkgs release-20.05", "emailresponsible": false }
             }
         }
     }
