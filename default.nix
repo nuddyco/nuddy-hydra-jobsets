@@ -1,7 +1,7 @@
 { nixpkgs, declInput }: let pkgs = import nixpkgs {}; in {
   jobsets = pkgs.runCommand "spec.json" {} ''
     cat <<EOF
-    ${builtins.toJSON declInput}
+    ${builtins.toXML declInput}
     EOF
     cat > $out <<EOF
     {
