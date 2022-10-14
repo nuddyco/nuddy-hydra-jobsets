@@ -18,7 +18,7 @@
             "keepnr": 3,
             "inputs": {
                 "src": { "type": "git", "value": "https://github.com/nuddyco/nuddy-hydra-jobsets", "emailresponsible": false },
-                "nixpkgs": { "type": "git", "value": "https://github.com/NixOS/nixpkgs release-20.05", "emailresponsible": false }
+                "nixpkgs": { "type": "git", "value": "https://github.com/NixOS/nixpkgs release-22.05", "emailresponsible": false }
             }
         }
     }
