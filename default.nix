@@ -37,6 +37,6 @@ in
     EOF
     echo
     echo result:
-    ${pkgs.jq}/bin/jq < $out
+    ${pkgs.jq}/bin/jq < $out/spec.json
   '';
 }
