@@ -14,9 +14,12 @@ in
 {
   jobsets = pkgs.runCommand "spec.json" {} ''
     cat <<EOF
+    declInput:
     ${builtins.toXML declInput}
     EOF
+    echo
     cat > $out <<EOF
+    result:
     ${builtins.toJSON
       (let githubrepo = id: { type = "git";
                               value = "https://github.com/${id}";
