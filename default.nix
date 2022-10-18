@@ -30,8 +30,8 @@ in
                 inputs = {
                   src = githubrepo "nuddyco/nuddy-hydra-jobsets";
                   nixpkgs = githubrepo "NixOS/nixpkgs release-22.05";
-                  kons-9 = githubrepo "kaveh808/kons-9";
-                  lispnix = githubrepo "nuddyco/lispnix";
+                  kons-9 = githubrepo "kaveh808/kons-9 main";
+                  lispnix = githubrepo "nuddyco/lispnix main";
                 };
               } // defaults; }))}
     EOF
