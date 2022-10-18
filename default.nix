@@ -17,9 +17,7 @@ in
     declInput:
     ${builtins.toXML declInput}
     EOF
-    echo
     cat > $out <<EOF
-    result:
     ${builtins.toJSON
       (let githubrepo = id: { type = "git";
                               value = "https://github.com/${id}";
@@ -36,5 +34,8 @@ in
             };
           } // defaults))}
     EOF
+    echo
+    echo result:
+    ${pkgs.jq}/bin/jq < $out
   '';
 }
