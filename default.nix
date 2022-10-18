@@ -17,8 +17,7 @@ in
     declInput:
     ${builtins.toXML declInput}
     EOF
-    mkdir $out
-    cat > $out/spec.json <<EOF
+    cat > $out <<EOF
     ${builtins.toJSON
       (let githubrepo = id: { type = "git";
                               value = "https://github.com/${id}";
@@ -37,6 +36,6 @@ in
     EOF
     echo
     echo result:
-    ${pkgs.jq}/bin/jq < $out/spec.json
+    ${pkgs.jq}/bin/jq < $out
   '';
 }
