@@ -23,16 +23,17 @@ in
                               value = "https://github.com/${id}";
                               emailresponsible = false; };
        in
-         ({ description = "kons-9 master";
-            nixexprinput = "kons-9";
-            nixexprpath = "kons-9.nix";
-            inputs = {
-              src = githubrepo "nuddyco/nuddy-hydra-jobsets";
-              nixpkgs = githubrepo "NixOS/nixpkgs release-22.05";
-              kons-9 = githubrepo "kaveh808/kons-9";
-              lispnix = githubrepo "nuddyco/lispnix";
-            };
-          } // defaults))}
+         ({ main =
+              { description = "kons-9 master";
+                nixexprinput = "kons-9";
+                nixexprpath = "kons-9.nix";
+                inputs = {
+                  src = githubrepo "nuddyco/nuddy-hydra-jobsets";
+                  nixpkgs = githubrepo "NixOS/nixpkgs release-22.05";
+                  kons-9 = githubrepo "kaveh808/kons-9";
+                  lispnix = githubrepo "nuddyco/lispnix";
+                };
+              } // defaults; }))}
     EOF
     echo
     echo result:
