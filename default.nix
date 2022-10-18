@@ -17,7 +17,8 @@ in
     declInput:
     ${builtins.toXML declInput}
     EOF
-    cat > $out <<EOF
+    mkdir $out
+    cat > $out/spec.json <<EOF
     ${builtins.toJSON
       (let githubrepo = id: { type = "git";
                               value = "https://github.com/${id}";
