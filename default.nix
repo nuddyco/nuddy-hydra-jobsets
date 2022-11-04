@@ -25,7 +25,7 @@ in
        in
          ({ main =
               { description = "kons-9 master";
-                nixexprinput = "kons-9";
+                nixexprinput = "lispnix";
                 nixexprpath = "kons-9.nix";
                 inputs = {
                   src = githubrepo "nuddyco/nuddy-hydra-jobsets";
