@@ -33,7 +33,19 @@ in
                   kons-9 = githubrepo "kaveh808/kons-9 main";
                   lispnix = githubrepo "nuddyco/lispnix main";
                 };
-              } // defaults; }))}
+              } // defaults;
+          lisp-packages =
+            {
+              description = "Common Lisp packages";
+              nixexprinput = "lispnix";
+              nixexprpath = "try-build.nix";
+              inputs = {
+                  src = githubrepo "nuddyco/nuddy-hydra-jobsets";
+                  nixpkgs = githubrepo "NixOS/nixpkgs release-22.05";
+                  lispnix = githubrepo "nuddyco/lispnix main";
+              };
+            } // defaults;
+          }))}
     EOF
     echo
     echo result:
