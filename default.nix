@@ -29,8 +29,8 @@ in
                 nixexprpath = "kons-9.nix";
                 inputs = {
                   src = githubrepo "nuddyco/nuddy-hydra-jobsets";
-                  #nixpkgs = githubrepo "NixOS/nixpkgs release-22.05";
-                  nixpkgs = { type = "tarball"; url = "https://github.com/nixos/nixpkgs/archive/master.tar.gz"; emailresponsible = false; };
+                  nixpkgs = githubrepo "NixOS/nixpkgs release-22.05";
+                  kons-9 = githubrepo "kaveh808/kons-9 main";
                   lispnix = githubrepo "nuddyco/lispnix main";
                 };
               } // defaults; }))}
