@@ -29,7 +29,7 @@ in
                 nixexprpath = "kons-9.nix";
                 inputs = {
                   src = githubrepo "nuddyco/nuddy-hydra-jobsets";
-                  nixpkgs = githubrepo "NixOS/nixpkgs release-22.05";
+                  nixpkgs = githubrepo "NixOS/nixpkgs bcdd40cd4a614fcca4c818fb1da0b068834fea0a";
                   kons-9 = githubrepo "kaveh808/kons-9 main";
                   lispnix = githubrepo "nuddyco/lispnix main";
                 };
