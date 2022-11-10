@@ -38,7 +38,7 @@ in
             {
               description = "Common Lisp packages";
               nixexprinput = "lispnix";
-              nixexprpath = "try-build.nix";
+              nixexprpath = "sbclPackages.nix";
               inputs = {
                   src = githubrepo "nuddyco/nuddy-hydra-jobsets";
                   nixpkgs = githubrepo "NixOS/nixpkgs release-22.05";
