@@ -41,7 +41,7 @@ in
               nixexprpath = "sbclPackages.nix";
               inputs = {
                   src = githubrepo "nuddyco/nuddy-hydra-jobsets";
-                  nixpkgs = githubrepo "NixOS/nixpkgs release-22.05";
+                  nixpkgs = githubrepo "NixOS/nixpkgs bcdd40cd4a614fcca4c818fb1da0b068834fea0a";
                   lispnix = githubrepo "nuddyco/lispnix main";
               };
             } // defaults;
